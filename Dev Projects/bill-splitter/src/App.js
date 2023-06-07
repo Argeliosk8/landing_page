@@ -1,11 +1,13 @@
 import './App.css';
-import ItemSubmissionForm from './Components/ItemSubmissionForm/ItemSubmissionForm';
-
+import TopBanner from './Components/TopBanner/TopBanner';
+import FormTableContainer from './Components/FormTableContainer/FormTableContainer';
 function App() {
   return (
     <>
-      <ItemSubmissionForm />
-    </>
+      <TopBanner />
+      <FormTableContainer />
+    </>     
+    
   );
 }
 
