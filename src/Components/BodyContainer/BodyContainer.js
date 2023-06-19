@@ -10,15 +10,13 @@ function BodyContainer(){
         renderedItems = ItemInfo.map((item)=>{
             return <ItemCard ItemInfo={item}/>
         })
-        return renderedItems
+        return (<div className="d-flex justify-content-center flex-wrap">{renderedItems}</div>)
     }
 
     return (
         <div class="container">
-            <TopBanner />
-            <div className="d-flex justify-content-center flex-wrap">
-                {renderItemCards()}
-            </div>
+            <TopBanner />            
+            {renderItemCards()}            
         </div>
     )
 }
