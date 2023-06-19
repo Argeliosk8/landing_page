@@ -1,5 +1,4 @@
 import './App.css';
-import Container from 'react-bootstrap/Container';
 import NavBar from './Components/NavBar/NavBar';
 import BodyContainer from './Components/BodyContainer/BodyContainer'; 
 import Footer from './Components/Footer/Footer';
