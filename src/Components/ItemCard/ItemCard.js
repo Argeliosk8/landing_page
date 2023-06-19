@@ -1,19 +1,15 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 
 function ItemCard(props){
     return (
-        <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={props.ItemInfo.imgUrl} />
-            <Card.Body>
-                <Card.Title>{props.ItemInfo.title}</Card.Title>
-                <Card.Text>
-                {props.ItemInfo.body_text}
-                </Card.Text>
-                <Button variant="primary">{props.ItemInfo.button_text}</Button>
-            </Card.Body>
-        </Card>
+        <div class="card" style={{ width: '18rem' }}>
+            <img src={props.ItemInfo.imgUrl}  class="card-img-top" alt="..."/>
+            <div class="card-body">
+            <h5 class="card-title">{props.ItemInfo.title}</h5>
+            <p class="card-text">{props.ItemInfo.body_text}</p>
+            <a href="#" class="btn btn-primary">{props.ItemInfo.button_text}</a>
+            </div>
+        </div>
     )
 }
 

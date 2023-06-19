@@ -64,12 +64,12 @@ function BodyContainer(){
     }
 
     return (
-        <Container>
+        <div class="container">
             <TopBanner />
             <div className="d-flex justify-content-center flex-wrap">
                 {renderItemCards()}
             </div>
-        </Container>
+        </div>
     )
 }
 
